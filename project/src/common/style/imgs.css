@@ -1,0 +1,238 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: .14rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "微软雅黑";
+  text-size-adjust: 100%;
+}
+
+ul, li {
+  list-style: none;
+}
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 625%;
+}
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none;
+}
+
+input, button {
+  outline: 0;
+  display: box;
+  line-clamp: 2;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+.imgs {
+  width: 100%;
+  height: 100%;
+  background: #f4f4f4;
+}
+
+.imgs-top {
+  position: fixed;
+  background: #fff;
+  top: 0;
+  width: 100%;
+  height: .8rem;
+  -webkit-box-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 99;
+  display: flex;
+}
+
+.imgs-top a {
+  flex: 1;
+  text-align: center;
+  box-sizing: border-box;
+  color: #454545;
+  display: inline-block;
+}
+
+.imgs-top a:nth-child(1) {
+  border-right: 1px solid #ccc;
+}
+
+.imgs-top a span {
+  max-width: 2.6rem;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.25;
+  font-size: .28rem;
+}
+
+.imgs-top a i.icon {
+  transform: rotate(135deg);
+  margin-left: .2rem;
+  vertical-align: 5%;
+  line-height: .2rem;
+  font-size: .26rem;
+  font-weight: 600;
+}
+
+.imgs-bottom {
+  overflow: hidden;
+  position: absolute;
+  background: #fff;
+  top: .98rem;
+  bottom: 0;
+  overflow-y: scroll;
+  border-bottom: .4rem solid #f4f4f4;
+}
+
+.imgs-bottom li {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  position: relative;
+  margin: .005rem 0;
+}
+
+.imgs-bottom li img {
+  width: 33%;
+  height: 2.46rem;
+  margin: .015rem 0;
+}
+
+.imgs-bottom li div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33%;
+  height: 2.46rem;
+  background: rgba(56, 90, 130, 0.5);
+  text-align: center;
+  margin: .01rem 0;
+}
+
+.imgs-bottom li div p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.imgs-bottom li div p:nth-child(1) {
+  padding: .25rem;
+}
+
+.imgs-gundong {
+  background: #f4f4f4;
+  top: 0;
+  text-align: center;
+  position: fixed;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+.imgs-gundong li {
+  float: left;
+  margin-right: .02rem;
+  margin-bottom: .02rem;
+  width: 2.46rem;
+  height: 2.46rem;
+  padding: 0;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.imgs-gundong li img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.imgs-gundong p {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-family: "华文行楷";
+}
+
+.imgs-gundong .swiper {
+  background: #000;
+  top: 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+}
+
+.imgs-gundong .swiper .swiper-container {
+  width: 100%;
+  height: 100%;
+  z-index: 102;
+}
+
+.imgs-gundong .swiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 102;
+}
+
+.imgs-gundong .swiper .swiper-wrapper .swiper-slide {
+  width: 375px;
+}
+
+.imgs-gundong .swiper .swiper-wrapper .swiper-slide li {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+.imgs-gundong .swiper .swiper-wrapper .swiper-slide li img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 1000;
+  transform: translateY(-50%);
+}
